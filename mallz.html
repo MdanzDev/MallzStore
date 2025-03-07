@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mallz Store - Special Ramadan Promo</title>
+    <style>
+        body {
+            background: linear-gradient(to right, #000428, #004e92);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            padding: 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+        h1, h2 {
+            animation: fadeIn 1s ease-in-out;
+        }
+        .category {
+            margin: 30px 0;
+            padding: 20px;
+            border-radius: 15px;
+            background: rgba(255, 255, 255, 0.1);
+            box-shadow: 0 4px 10px rgba(255, 255, 255, 0.3);
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+            backdrop-filter: blur(10px);
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            user-select: none;
+        }
+        .category:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 15px rgba(255, 255, 255, 0.5);
+        }
+        .category-content {
+            display: none;
+            margin-top: 10px;
+            opacity: 0;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out;
+        }
+        .category.active .category-content {
+            display: block;
+            opacity: 1;
+            max-height: 500px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 10px;
+            border: none;
+            border-radius: 25px;
+            background: #00aaff;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s;
+            text-decoration: none;
+            outline: none;
+        }
+        .btn:hover {
+            background: #0088cc;
+        }
+        .btn:focus {
+            outline: none;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+            .category {
+                margin: 20px 0;
+                padding: 15px;
+            }
+            .btn {
+                padding: 8px 15px;
+                font-size: 14px;
+            }
+        }
+    </style>
+    <script>
+        function toggleContent(element) {
+            element.classList.toggle("active");
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>✨ PROMO SPESIAL RAMADAN BY MALLZ! ✨</h1>
+        <p>🌙 Bulan penuh berkah, saatnya dapatkan layanan bot WhatsApp dengan harga terbaik!</p>
+        
+        <div class="category" onclick="toggleContent(this)">
+            <h2>🔥 LIST PANEL BOT WA 🔥</h2>
+            <div class="category-content">
+                <p>🚀 PANEL PUBLIC - Mulai dari 3K!</p>
+                <p>🔒 PANEL PRIVATE - Mulai dari 4K!</p>
+            </div>
+        </div>
+
+        <div class="category" onclick="toggleContent(this)">
+            <h2>📢 📈 LIST RESELLER, ADMIN & OWNER PANEL 📈 📢</h2>
+            <div class="category-content">
+                <p>💼 RESELLER - Mulai dari 4K!</p>
+                <p>👑 ADMIN PANEL - Mulai dari 9K!</p>
+                <p>🎖️ OWNER PANEL - Mulai dari 15K!</p>
+            </div>
+        </div>
+        
+        <div class="category" onclick="toggleContent(this)">
+            <h2>📣 🚀 OPEN JASHER 🚀 📣</h2>
+            <div class="category-content">
+                <p>💎 1x Share ➝ Cuma 2K!</p>
+                <p>📌 5x Share ➝ Cuma 6K!</p>
+            </div>
+        </div>
+
+        <div class="category" onclick="toggleContent(this)">
+            <h2>🔥 ⚡ OPEN MURBUG REVELATION CRASH ⚡ 🔥</h2>
+            <div class="category-content">
+                <p>⚠️ 1 Minggu ➝ 8K</p>
+                <p>⚠️ 2 Minggu ➝ 16K</p>
+                <p>⚠️ 1 Bulan ➝ 20K</p>
+                <p>⚠️ Permanen ➝ 30K</p>
+            </div>
+        </div>
+
+        <div class="category" onclick="toggleContent(this)">
+            <h2>⚡ PROMOSI KILAT ⚡</h2>
+            <div class="category-content">
+                <p>🔒 PANEL PRIVATE 5K - 10 SLOT</p>
+                <p>✅ ANTI DELAY</p>
+                <p>✅ ANTI INTIP</p>
+                <p>✅ SPEK VPS R16C4</p>
+            </div>
+        </div>
+
+        <h2>📞 Hubungi Mallz:</h2>
+        <a class="btn" href="https://wa.me/6282241298950">Chat via WhatsApp 1</a>
+        <a class="btn" href="https://wa.me/573508101601">Chat via WhatsApp 2</a>
+        <a class="btn" href="https://whatsapp.com/channel/0029Vb2dtIoIXnluk2IPVE3E">Lihat Testimoni</a>
+    </div>
+</body>
+</html>
